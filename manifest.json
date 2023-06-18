@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Image Extension Converter",
+  "version": "1.0",
+  "description": "Experience effortless image format conversions right from your browser! Our innovative Chrome extension empowers you to transform your images effortlessly to any desired format. Whether you need to convert from JPG to PNG, PNG to GIF, or any other popular image extension, our tool simplifies the process with just a few clicks..",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "popup.js",
+        "script.js"
+      ]
+    }
+  ]
+}

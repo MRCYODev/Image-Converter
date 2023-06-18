@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Converter</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="theme-buttons">
+    <button id="themeButton">Toggle Theme</button>
+  </div>
+  
+
+    <h1>Image Converter</h1>
+    <div id="fileDropArea" class="file-drop-area">
+      <p class="file-drop-area-text">Drag and Drop Image Here</p>
+      <input type="file" id="fileInput" accept="image/*" class="input-file" multiple>
+      <label for="fileInput" class="custom-file-input">Choose Files</label>
+    </div>
+    <p id="selectedFileName"></p>
+    <div id="imagePreview"></div>
+    <label for="extensionSelect">Select Extension:</label>
+    <select id="extensionSelect">
+      <option value="jpg">JPG</option>
+      <option value="webp">WEBP</option>
+      <option value="png">PNG</option>
+      <option value="jpeg">JPEG</option>
+      <option value="gif">GIF</option>
+      <option value="3fr">3FR</option>
+      <option value="arw">ARW</option>
+      <option value="avif">AVIF</option>
+      <option value="bmp">BMP</option>
+      <option value="cr2">CR2</option>
+      <option value="cr3">CR3</option>
+      <option value="crw">CRW</option>
+      <option value="dcr">DCR</option>
+      <option value="dng">DNG</option>
+      <option value="eps">EPS</option>
+      <option value="erf">ERF</option>
+      <option value="heic">HEIC</option>
+      <option value="heif">HEIF</option>
+      <option value="icns">ICNS</option>
+      <option value="ico">ICO</option>
+      <option value="jfif">JFIF</option>
+      <option value="mos">MOS</option>
+      <option value="mrw">MRW</option>
+      <option value="nef">NEF</option>
+      <option value="odd">ODD</option>
+      <option value="odg">ODG</option>
+      <option value="orf">ORF</option>
+      <option value="pef">PEF</option>
+      <option value="ppm">PPM</option>
+      <option value="ps">PS</option>
+      <option value="psd">PSD</option>
+      <option value="raf">RAF</option>
+      <option value="raw">RAW</option>
+      <option value="rw2">RW2</option>
+      <option value="tif">TIF</option>
+      <option value="tiff">TIFF</option>
+      <option value="x3f">X3F</option>
+      <option value="xcf">XCF</option>
+      <option value="xps">XPS</option>
+    </select>    
+    <button id="convertBtn">Convert</button>
+    <p id="message"></p>
+
+
+
+    <div class="menu-buttons">
+      <button id="githubBtn" class="menu-button">
+        <i class="fa-brands fa-github"></i>
+        Github</button>
+
+      <button id="aboutBtn" class="menu-button">
+        <i class="fa-solid fa-bug"></i>
+        About
+      </button>
+
+      <button id="donateBtn" class="menu-button">
+        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+        Donate
+      </button>
+    </div>  
+    <footer>
+      <p id="copyright">
+        &copy; <span id="currentYear"></span> MRCYO. All rights reserved.
+      </p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</body>
+</html>

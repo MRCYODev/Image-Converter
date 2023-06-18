@@ -1,0 +1,181 @@
+body {
+  width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1d;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label.custom-file-input {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #5C469C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label.custom-file-input:hover {
+  background-color: #7100b3;
+}
+
+label.custom-file-input:active {
+  background-color: #370080;
+}
+
+select {
+  appearance: none;
+  padding: 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+select:focus {
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5C469C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.file-drop-area.drag-over {
+  background-color: #ddd;
+}
+
+
+
+body.purple-theme {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  body.purple-theme {
+    background-color: #37306B;
+    color: #D4ADFC;
+  }
+  
+  .theme-buttons {
+    margin-bottom: 10px;
+  }
+  
+  .theme-buttons button {
+    align-items: left;
+    background-color: #5C469C;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .file-drop-area {
+    padding: 10px;
+    background-color: #8667e6;
+    border: 2px dashed #a696d6;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .file-drop-area:hover {
+    background-color: #635985;
+  }
+  
+  .file-drop-area-text {
+    color: #fff;
+  }
+  
+  select {
+    appearance: none;
+    padding: 10px;
+    background-color: #5C469C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  button#convertButton {
+    padding: 10px 20px;
+    background-color: #5C469C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  p#resultMessage {
+    margin-top: 10px;
+  }
+  
+  .preview-image {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  /* Existing CSS styles... */
+
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu-buttons button {
+  padding: 10px 20px;
+  background-color: #5C469C;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu-buttons button:hover {
+  background-color: #7100b3;
+}
+
+.menu-buttons button:active {
+  background-color: #370080;
+}
+
+.menu-button {
+  padding: 10px;
+  background-color: #5C469C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button i {
+  margin-right: 5px;
+}
